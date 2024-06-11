@@ -18,7 +18,7 @@
             <li v-for="item in addresses">
                 <p>{{item.name}}</p>
                 <p>{{item.address}}</p>
-                <button @click="rm(item)"><i style="font-size: 1.4em;" class="fa-solid fa-delete-left"></i></button>
+                <button id="btn" @click="rm(item)"><i style="font-size: 1.4em;" class="fa-solid fa-delete-left"></i></button>
             </li>
         </ul>
 
