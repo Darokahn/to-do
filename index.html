@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88f3d1f48c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Vue</title>
 </head>
@@ -12,12 +13,12 @@
         <h1>Address Book</h1>
         <input type="text" placeholder="Enter Name" v-model="nameInput">
         <input type="email" placeholder="Enter Address" v-model="addressInput">
-        <button v-if="validateInputs()" @click="">Record Address</button>
+        <button v-if="validateInputs()" @click = "submit()">Record Address</button>
         <ul>
             <li v-for="item in addresses">
                 <p>{{item.name}}</p>
                 <p>{{item.address}}</p>
-                <button @click="delete(item)"></button>
+                <button @click="delete(item)"><i style="font-size: 1.4em;" class="fa-solid fa-delete-left"></i></button>
             </li>
         </ul>
 

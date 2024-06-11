@@ -3,4 +3,4 @@ input address: v-model="addressInput" type="email"
 button (below name and address): v-if="validateInputs()" @click = "submit()"
 ul (below name and address):
 li (inside ul): v-for="item in addresses" > <p>{{item.name}}</p> <p>{{item.address}}</p> <button>
-button (inside li): @click="delete(item)"
+button (inside li): @click="rm(item)"

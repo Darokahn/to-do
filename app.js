@@ -17,8 +17,9 @@ Vue.createApp({
             this.nameInput = "";
             this.addressInput = "";
         },
-        delete(item) {
-            console.log(item);
+        rm(item) {
+            let itemIndex = this.addresses.indexOf(item);
+            this.addresses.splice(itemIndex, 1);
         }
     },
     created: function() {
