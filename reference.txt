@@ -1,0 +1,5 @@
+input name: 
+input address: 
+ul (below name and address):
+li (inside ul): v-for="item in addresses" > <p>{{item.name}}</p> <p>{{item.address}}</p> <button>
+button (inside li): @click="delete(item)"
