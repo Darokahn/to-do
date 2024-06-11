@@ -1,7 +1,7 @@
 Vue.createApp({
     data() {
         return {
-            addresses: [{name: "hello", address: "world"}],
+            addresses: [],
             nameInput: "",
             addressInput: "",
 
