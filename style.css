@@ -31,3 +31,24 @@ button{
     height: 40px;
     width: 180px    ;
 }
+
+#social{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+#social a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+#social li{
+    list-style: none;
+    margin-right: 20px;
+}
+#social li:nth-child(1)
+{
+    margin-bottom: 20px;
+}

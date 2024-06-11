@@ -18,10 +18,16 @@
             <li v-for="item in addresses">
                 <p>{{item.name}}</p>
                 <p>{{item.address}}</p>
-                <button @click="delete(item)"><i style="font-size: 1.4em;" class="fa-solid fa-delete-left"></i></button>
+                <button @click="rm(item)"><i style="font-size: 1.4em;" class="fa-solid fa-delete-left"></i></button>
             </li>
         </ul>
 
+    </div>
+    <div id="social">
+        <ul>
+            <li><a href="https://github.com/Moustafa-Bendari"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://github.com/Darokahn"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
     </div>
 
 </body>
