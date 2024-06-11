@@ -12,7 +12,7 @@
         <h1>Address Book</h1>
         <input type="text" placeholder="Enter Name" v-model="nameInput">
         <input type="email" placeholder="Enter Address" v-model="addressInput">
-        <button v-if="validateInputs()">Record Address</button>
+        <button v-if="validateInputs()" @click="">Record Address</button>
         <ul>
             <li v-for="item in addresses">
                 <p>{{item.name}}</p>

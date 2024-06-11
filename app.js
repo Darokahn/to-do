@@ -1,7 +1,7 @@
 Vue.createApp({
     data() {
         return {
-            addresses: [],
+            addresses: [{name: "hello", address: "world"}],
             nameInput: "",
             addressInput: "",
 
@@ -13,9 +13,12 @@ Vue.createApp({
             return (this.nameInput.length > 0 && this.addressInput.length > 0);
         },
         submit() {
-            addresses.push({name: this.nameInput, address: this.addressInput})
+            this.addresses.push({name: this.nameInput, address: this.addressInput})
             this.nameInput = "";
             this.addressInput = "";
+        },
+        delete(item) {
+            console.log(item);
         }
     },
     created: function() {
