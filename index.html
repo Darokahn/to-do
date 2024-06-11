@@ -9,8 +9,18 @@
 </head>
 <body>
     <div id="app">
+        <h1>Address Book</h1>
+        <input type="text" placeholder="Enter Name" v-model="nameInput">
+        <input type="email" placeholder="Enter Address" v-model="addressInput">
+        <button v-if="validateInputs()">Record Address</button>
+        <ul>
+            <li v-for="item in addresses">
+                <p>{{item.name}}</p>
+                <p>{{item.address}}</p>
+                <button @click="delete(item)"></button>
+            </li>
+        </ul>
 
-        
     </div>
 
 </body>
